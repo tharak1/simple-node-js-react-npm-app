@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        PATH = "/home/saitharakdev/.nvm/versions/node/v22.11.0/bin/node" 
+        PATH = "/home/saitharakdev/.nvm/versions/node" 
     }
     stages {
         stage('Build') {
