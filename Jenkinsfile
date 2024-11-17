@@ -3,10 +3,7 @@ pipeline {
     stages {
         stage('Install Dependencies') {
             steps {
-                sh '''
-                    sudo apt update
-                    sudo apt install -y nodejs npm
-                '''
+                sh 'sudo apt install -y nodejs npm'
             }
         }
         stage('Build') {
